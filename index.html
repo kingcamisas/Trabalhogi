@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Descubra seu perfil DISC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar" id="bar"></div><div class="orb o1" data-s=".12"></div><div class="orb o2" data-s="-.08"></div>
+<main>
+<section id="top">
+  <div class="reveal"><div class="brand">RH2 • ESCOLA MULTI</div>
+  <h1>Descubra seu perfil DISC</h1>
+  <p>Conheça suas características comportamentais e descubra como você se relaciona com o mundo.</p>
+  <a class="btn" href="#sobre" style="text-decoration:none">Iniciar teste</a></div>
+</section>
+
+<section id="sobre">
+  <div class="glass reveal">
+    <h2>Para que serve este teste</h2>
+    <p>O modelo DISC descreve quatro estilos de comportamento. Ele ajuda você a entender como costuma agir ao decidir, trabalhar em equipe e lidar com mudanças.</p>
+    <p>São 5 perguntas rápidas. Escolha a alternativa que mais combina com você, não a que parece a mais certa. Não há respostas boas ou ruins, e o resultado mostra seu perfil predominante.</p>
+    <div class="grid">
+      <div class="pill" style="background:#c9494d">D – Dominância<small>Decisão, ação e resultados</small></div>
+      <div class="pill" style="background:#d9a521">I – Influência<small>Comunicação e entusiasmo</small></div>
+      <div class="pill" style="background:#2f9a6b">S – Estabilidade<small>Paciência e cooperação</small></div>
+      <div class="pill" style="background:#4a78b8">C – Conformidade<small>Análise e organização</small></div>
+    </div>
+    <a class="btn" href="#q0" style="text-decoration:none">Começar as perguntas</a>
+  </div>
+</section>
+
+<div id="qs"></div>
+
+<section id="fim">
+  <div class="glass reveal" style="text-align:center">
+    <h2>Pronto para ver seu resultado?</h2>
+    <p id="st" style="margin-inline:auto">Responda todas as perguntas para liberar o resultado.</p>
+    <button class="btn" id="go" disabled>Ver meu resultado</button>
+  </div>
+</section>
+
+<section id="res">
+  <div class="reveal">
+    <div class="brand">Seu resultado</div>
+    <div class="big" id="rt"></div>
+    <p id="rd"></p>
+    <div class="glass" style="margin-top:18px" id="bars"></div>
+    <p><b style="color:var(--gold)">Desafio:</b> <span id="rc"></span></p>
+    <textarea id="sum" readonly aria-label="Resumo do resultado"></textarea>
+    <div class="noprint">
+      <button class="btn" id="cp">Copiar resumo</button>
+      <button class="btn ghost" id="pr">Imprimir ou salvar em PDF</button>
+      <button class="btn ghost" id="rs">Refazer o teste</button>
+      <p class="hint" id="msg" role="status"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
